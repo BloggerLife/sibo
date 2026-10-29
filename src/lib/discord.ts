@@ -18,11 +18,11 @@ async function sendWebhook(body: RESTPostAPIWebhookWithTokenFormDataBody) {
 
 export async function sendGuestbookNotification(message: string, userName: string, userImage: string) {
   const body: RESTPostAPIWebhookWithTokenFormDataBody = {
-    username: 'Guestbook Bot',
+    username: 'Testimonies Bot',
     avatar_url: BOT_AVATAR_URL,
     embeds: [
       {
-        title: 'New message on the guestbook!',
+        title: 'New testimony received!',
         description: message,
         url: 'https://nelsonlai.dev/guestbook',
         color: 6_609_519,

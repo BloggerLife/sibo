@@ -21,29 +21,6 @@
     "update-avatar": "更新头像"
   },
   "admin": {
-    "dashboard": {
-      "description": "网站概览",
-      "recent-activity": {
-        "commented-on": "{name} 在 <link>{post}</link> 发表了评论",
-        "empty": "没有最近的活动",
-        "guestbook-message": "{name} 留下了一条留言",
-        "title": "最近活动"
-      },
-      "stats": {
-        "comments": "评论",
-        "likes": "点赞",
-        "messages": "消息",
-        "users": "用户",
-        "views": "浏览次数"
-      },
-      "trends": {
-        "comments": "评论",
-        "last-n-days": "最近 {days} 天",
-        "messages": "留言板",
-        "no-data": "没有可用的数据",
-        "title": "趋势"
-      }
-    },
     "page-header": {
       "comments": {
         "description": "管理评论"
@@ -130,21 +107,17 @@
       "close": "关闭",
       "comment": "评论",
       "comments": "评论",
-      "dashboard": "仪表板",
       "facebook": "Facebook",
       "general": "一般",
       "github": "GitHub",
-      "guestbook": "留言板",
+      "guestbook": "心得分享",
       "home": "首页",
       "instagram": "Instagram",
       "links": "链接",
-      "privacy": "隐私权政策",
-      "projects": "项目",
+      "projects": "服务",
       "settings": "设定",
-      "terms": "服务条款",
       "unsubscribe": "取消订阅",
       "users": "用户",
-      "uses": "装备",
       "youtube": "YouTube"
     },
     "like": "赞",
@@ -186,23 +159,11 @@
       "rows-selected": "已选取 {selected} / {total} 行"
     }
   },
-  "dashboard": {
-    "stat": {
-      "blog-total-likes": "博客总点赞数",
-      "blog-total-views": "博客总浏览量",
-      "coding-hours": "编程时间",
-      "github-followers": "GitHub 关注者",
-      "github-stars": "GitHub 星数",
-      "youtube-subscribers": "YouTube 订阅者",
-      "youtube-views": "YouTube 浏览量"
-    }
-  },
   "dialog": {
     "sign-in": {
       "continue-with": "使用 {provider} 继续",
       "description": "以继续使用 nelsonlai.dev",
-      "last-used": "上次使用",
-      "notice": "继续即表示您同意我们的 <terms>服务条款</terms> 和 <privacy>隐私权政策</privacy>"
+      "last-used": "上次使用"
     }
   },
   "error": {
@@ -211,7 +172,6 @@
     "comment-cannot-be-empty": "评论不能为空",
     "copy-to-clipboard-error": "无法复制到剪贴板，请再试一次。",
     "failed-to-fetch-comments-data": "无法获取评论数据。请刷新页面。",
-    "failed-to-fetch-dashboard-data": "无法获取仪表板数据。请刷新页面。",
     "failed-to-fetch-users-data": "无法获取用户数据。请刷新页面。",
     "failed-to-load-comments": "无法载入评论。请刷新页面。",
     "failed-to-load-messages": "无法载入留言。请刷新页面。",
@@ -223,7 +183,6 @@
     "name-too-long": "名称过长",
     "need-logged-in-to-vote": "您必须登入才能投票评论",
     "not-found": "找不到页面。",
-    "now-playing-error": "无法获取 Spotify 资料",
     "reply-cannot-be-empty": "回复不能为空",
     "sign-in-error": "登入失败。请再试一次。",
     "sign-out-failed": "登出失败，请再试一次。",
@@ -232,16 +191,16 @@
     "try-again": "再试一次"
   },
   "guestbook": {
-    "no-messages": "没有留言，快来成为第一位留言者！",
+    "no-messages": "还没有心得分享，欢迎分享你的感受！",
     "pinned": {
-      "description": "感谢您造访我的网站。如果您有时间，我很乐意听取您对我作品的看法。请使用您的账户登入以留下评论。谢谢！",
+      "description": "感谢你访问我的网站。如果你有时间，欢迎分享你对我工作的看法。请登录账号后分享你的心得，谢谢！",
       "greeting": "嗨！ 👋"
     },
-    "placeholder": "留言",
+    "placeholder": "分享你的心得",
     "signin": {
-      "description": "以留下评论"
+      "description": "以分享心得"
     },
-    "submit": "送出"
+    "submit": "提交心得"
   },
   "homepage": {
     "about-me": {
@@ -277,17 +236,12 @@
       "title": "最新文章"
     },
     "selected-projects": {
-      "card": "项目",
-      "more": "查看所有项目",
-      "title": "精选项目"
+      "card": "服务",
+      "more": "查看所有服务",
+      "title": "精选服务"
     }
   },
   "layout": {
-    "change-language": "更改语言",
-    "now-playing": {
-      "loading": "载入中...",
-      "not-listening": "未在收听 - Spotify"
-    },
     "sidebar": {
       "description": "显示移动端侧边栏。",
       "title": "侧边栏"

@@ -6,7 +6,6 @@ import { Link } from '@/components/ui/link'
 
 import { ImageZoom } from '../image-zoom'
 import { Heading } from './heading'
-import { ItemGrid } from './item-grid'
 import { LinkCard } from './link-card'
 import { Logo } from './logo'
 import { Table } from './table'
@@ -52,7 +51,6 @@ const components = {
 
   // Custom components
   Table,
-  ItemGrid,
   Video,
   LinkCard,
   Logo,

@@ -1,17 +1,11 @@
-import { getTranslations } from 'next-intl/server'
+import { getLocale } from 'next-intl/server'
 
-import { AdminDashboard } from '@/components/admin/admin-dashboard'
-import { AdminPageHeader } from '@/components/admin/admin-page-header'
+import { redirect } from '@/i18n/navigation'
 
 async function Page() {
-  const t = await getTranslations()
+  const locale = await getLocale()
 
-  return (
-    <div className='space-y-6'>
-      <AdminPageHeader title={t('common.labels.dashboard')} description={t('admin.dashboard.description')} />
-      <AdminDashboard />
-    </div>
-  )
+  redirect({ href: '/admin/comments', locale })
 }
 
 export default Page

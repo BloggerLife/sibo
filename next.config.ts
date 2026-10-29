@@ -73,7 +73,7 @@ const config: NextConfig = {
     return [
       {
         source: '/pc-specs',
-        destination: '/uses',
+        destination: '/about',
         permanent: true,
       },
       {

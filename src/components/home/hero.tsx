@@ -9,24 +9,19 @@ import { BlurImage } from '@/components/blur-image'
 
 const WORDS = [
   {
-    // i18n-check t('homepage.hero.amazing')
-    key: 'amazing',
+    // i18n-check t('homepage.hero.information')
+    key: 'information',
     className: 'from-[#ff1835] to-[#ffc900]',
   },
   {
-    // i18n-check t('homepage.hero.stunning')
-    key: 'stunning',
+    // i18n-check t('homepage.hero.preparation')
+    key: 'preparation',
     className: 'from-[#0077ff] to-[#00e7df]',
   },
   {
-    // i18n-check t('homepage.hero.fantastic')
-    key: 'fantastic',
+    // i18n-check t('homepage.hero.guidance')
+    key: 'guidance',
     className: 'from-[#7f00de] to-[#ff007f]',
-  },
-  {
-    // i18n-check t('homepage.hero.attractive')
-    key: 'attractive',
-    className: 'from-[#2ecc70] to-[#1ca085]',
   },
 ] as const
 
@@ -82,9 +77,9 @@ function Introduction() {
             {t('homepage.hero.line-2-right')}
           </motion.span>
         </motion.div>
-        <motion.div initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: 'easeOut' }}>
+        {/* <motion.div initial={{ x: -40, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ ease: 'easeOut' }}>
           {t('homepage.hero.line-3')}
-        </motion.div>
+        </motion.div> */}
       </h1>
       <motion.div
         initial={{ x: -50, opacity: 0 }}

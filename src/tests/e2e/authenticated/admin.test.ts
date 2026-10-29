@@ -21,10 +21,10 @@ test.describe('admin route protection', () => {
     }
   }
 
-  for (const path of ['stats', 'user/list', 'comment/list', 'recentActivity', 'trends']) {
+  for (const path of ['user/list', 'comment/list']) {
     test(`rejects direct access to /rpc/admin/${path} for regular members`, async ({ request }) => {
       const response = await request.post(`/rpc/admin/${path}`, {
-        data: { json: path === 'trends' ? { days: 7, timezone: 'UTC' } : {} },
+        data: { json: {} },
       })
 
       expect(response.status()).toBe(403)

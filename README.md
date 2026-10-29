@@ -43,8 +43,8 @@ Welcome to my personal blog and portfolio website! This repository contains a mo
 
 ### Site Features
 
-- Guestbook
-- Admin dashboard with live stats
+- Testimonies
+- Admin user and comment management
 - Account settings
 
 ### Blog Features

@@ -1,13 +1,13 @@
 services:
   db:
     image: postgres:16-alpine
-    container_name: nelsonlaidev-postgres
+    container_name: sibo-postgres
     ports:
       - 5432:5432
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=nelsonlaidev
+      - POSTGRES_DB=sibo
     volumes:
       - db:/var/lib/postgresql/data
     networks:

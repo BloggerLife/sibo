@@ -1,5 +1,5 @@
 import { ORPCError } from '@orpc/client'
-import { and, eq, sql, sum } from 'drizzle-orm'
+import { and, eq, sql } from 'drizzle-orm'
 
 import { postLikes, posts } from '@/db/schemas'
 import { getAnonKey } from '@/utils/get-anon-key'
@@ -7,7 +7,6 @@ import { getIp } from '@/utils/get-ip'
 
 import { cache } from '../cache'
 import { publicProcedure } from '../procedures'
-import { LikesStatsOutputSchema } from '../schemas/blog.schema'
 import {
   CountLikeInputSchema,
   CountLikeOutputSchema,
@@ -178,22 +177,7 @@ const incrementLike = publicProcedure
     }
   })
 
-const getStats = publicProcedure.output(LikesStatsOutputSchema).handler(async ({ context }) => {
-  const [result] = await context.db
-    .select({
-      value: sum(posts.likes),
-    })
-    .from(posts)
-
-  const likes = result?.value ? Number(result.value) : 0
-
-  return {
-    likes,
-  }
-})
-
 export const likeRouter = {
   count: countLike,
   increment: incrementLike,
-  stats: getStats,
 }

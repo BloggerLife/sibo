@@ -1,11 +1,10 @@
 import { ORPCError } from '@orpc/client'
-import { eq, sql, sum } from 'drizzle-orm'
+import { eq, sql } from 'drizzle-orm'
 
 import { posts } from '@/db/schemas'
 
 import { cache } from '../cache'
 import { publicProcedure } from '../procedures'
-import { ViewsStatsOutputSchema } from '../schemas/blog.schema'
 import {
   CountViewInputSchema,
   CountViewOutputSchema,
@@ -74,22 +73,7 @@ const incrementView = publicProcedure
     }
   })
 
-const getStats = publicProcedure.output(ViewsStatsOutputSchema).handler(async ({ context }) => {
-  const [result] = await context.db
-    .select({
-      value: sum(posts.views),
-    })
-    .from(posts)
-
-  const views = result?.value ? Number(result.value) : 0
-
-  return {
-    views,
-  }
-})
-
 export const viewRouter = {
   count: countView,
   increment: incrementView,
-  stats: getStats,
 }

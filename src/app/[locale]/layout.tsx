@@ -4,7 +4,7 @@ import type { Metadata, Viewport } from 'next'
 
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { cn } from 'cn'
-import { Geist, Geist_Mono, Noto_Sans_SC, Noto_Sans_TC } from 'next/font/google'
+import localFont from 'next/font/local'
 import { notFound } from 'next/navigation'
 import { hasLocale, NextIntlClientProvider } from 'next-intl'
 import { getLocale } from 'next-intl/server'
@@ -36,24 +36,61 @@ export const viewport: Viewport = {
   ],
 }
 
-const geistSans = Geist({
+const geistSans = localFont({
+  src: [
+    {
+      path: '../../assets/fonts/Geist-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../assets/fonts/Geist-SemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
   variable: '--font-geist-sans',
-  subsets: ['latin'],
+  display: 'swap',
 })
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: '../../assets/fonts/Geist-Regular.ttf',
   variable: '--font-geist-mono',
-  subsets: ['latin'],
+  display: 'swap',
 })
 
-const notoSansTC = Noto_Sans_TC({
+const notoSansTC = localFont({
+  src: [
+    {
+      path: '../../assets/fonts/NotoSansTC-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../assets/fonts/NotoSansTC-SemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
   variable: '--font-noto-sans-tc',
-  subsets: ['latin'],
+  display: 'swap',
 })
 
-const notoSansSC = Noto_Sans_SC({
+const notoSansSC = localFont({
+  src: [
+    {
+      path: '../../assets/fonts/NotoSansSC-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../assets/fonts/NotoSansSC-SemiBold.ttf',
+      weight: '600',
+      style: 'normal',
+    },
+  ],
   variable: '--font-noto-sans-sc',
-  subsets: ['latin'],
+  display: 'swap',
 })
 
 async function Layout(props: LayoutProps<'/[locale]'>) {

@@ -21,29 +21,6 @@
     "update-avatar": "Actualizar avatar"
   },
   "admin": {
-    "dashboard": {
-      "description": "Resumen de tu sitio",
-      "recent-activity": {
-        "commented-on": "{name} comentó en <link>{post}</link>",
-        "empty": "No hay actividad reciente",
-        "guestbook-message": "{name} dejó un mensaje en el libro de visitas",
-        "title": "Actividad Reciente"
-      },
-      "stats": {
-        "comments": "Comentarios",
-        "likes": "Me gusta",
-        "messages": "Mensajes",
-        "users": "Usuarios",
-        "views": "Vistas"
-      },
-      "trends": {
-        "comments": "Comentarios",
-        "last-n-days": "Últimos {days} días",
-        "messages": "Libro de Visitas",
-        "no-data": "No hay datos disponibles",
-        "title": "Tendencias"
-      }
-    },
     "page-header": {
       "comments": {
         "description": "Administrar comentarios"
@@ -130,21 +107,17 @@
       "close": "Cerrar",
       "comment": "Comentario",
       "comments": "Comentarios",
-      "dashboard": "Panel",
       "facebook": "Facebook",
       "general": "General",
       "github": "GitHub",
-      "guestbook": "Libro de visitas",
+      "guestbook": "Testimonios",
       "home": "Inicio",
       "instagram": "Instagram",
       "links": "Enlaces",
-      "privacy": "Política de privacidad",
-      "projects": "Proyectos",
+      "projects": "Servicios",
       "settings": "Configuración",
-      "terms": "Términos de servicio",
       "unsubscribe": "Cancelar suscripción",
       "users": "Usuarios",
-      "uses": "Usos",
       "youtube": "YouTube"
     },
     "like": "Me gusta",
@@ -186,23 +159,11 @@
       "rows-selected": "{selected} de {total} fila(s) seleccionada(s)."
     }
   },
-  "dashboard": {
-    "stat": {
-      "blog-total-likes": "Total de me gusta del blog",
-      "blog-total-views": "Total de vistas del blog",
-      "coding-hours": "Horas de programación",
-      "github-followers": "Seguidores en GitHub",
-      "github-stars": "Estrellas en GitHub",
-      "youtube-subscribers": "Suscriptores de YouTube",
-      "youtube-views": "Vistas de YouTube"
-    }
-  },
   "dialog": {
     "sign-in": {
       "continue-with": "Continuar con {provider}",
       "description": "para continuar a nelsonlai.dev",
-      "last-used": "Último usado",
-      "notice": "Al continuar, aceptas nuestros <terms>Términos de servicio</terms> y <privacy>Política de privacidad</privacy>"
+      "last-used": "Último usado"
     }
   },
   "error": {
@@ -211,7 +172,6 @@
     "comment-cannot-be-empty": "El comentario no puede estar vacío",
     "copy-to-clipboard-error": "No se pudo copiar al portapapeles. Por favor intenta de nuevo.",
     "failed-to-fetch-comments-data": "Error al obtener datos de comentarios. Por favor recarga la página.",
-    "failed-to-fetch-dashboard-data": "Error al obtener datos del panel. Por favor recarga la página.",
     "failed-to-fetch-users-data": "Error al obtener datos de usuarios. Por favor recarga la página.",
     "failed-to-load-comments": "Error al cargar comentarios. Por favor recarga la página.",
     "failed-to-load-messages": "Error al cargar mensajes. Por favor recarga la página.",
@@ -223,7 +183,6 @@
     "name-too-long": "El nombre es demasiado largo",
     "need-logged-in-to-vote": "Debes iniciar sesión para votar comentarios",
     "not-found": "Página no encontrada.",
-    "now-playing-error": "Error al obtener datos de Spotify",
     "reply-cannot-be-empty": "La respuesta no puede estar vacía",
     "sign-in-error": "Error al iniciar sesión. Por favor intenta de nuevo.",
     "sign-out-failed": "Error al cerrar sesión. Por favor intenta de nuevo.",
@@ -232,16 +191,16 @@
     "try-again": "Intentar de nuevo"
   },
   "guestbook": {
-    "no-messages": "Sin mensajes. ¡Sé el primero en dejar un mensaje!",
+    "no-messages": "Aún no hay testimonios. ¡Sé el primero en compartir el tuyo!",
     "pinned": {
-      "description": "Gracias por visitar mi sitio web. Si tienes un momento, me encantaría escuchar tus opiniones sobre mi trabajo. Por favor inicia sesión con tu cuenta para dejar un comentario. ¡Gracias!",
+      "description": "Gracias por visitar mi sitio web. Si tienes un momento, me encantaría conocer tu opinión sobre mi trabajo. Inicia sesión con tu cuenta para compartir tu testimonio. ¡Gracias!",
       "greeting": "¡Hola! 👋"
     },
-    "placeholder": "Deja un mensaje",
+    "placeholder": "Comparte tu testimonio",
     "signin": {
-      "description": "para dejar un mensaje"
+      "description": "para compartir un testimonio"
     },
-    "submit": "Enviar"
+    "submit": "Enviar testimonio"
   },
   "homepage": {
     "about-me": {
@@ -277,17 +236,12 @@
       "title": "Últimos artículos"
     },
     "selected-projects": {
-      "card": "Proyecto",
-      "more": "Ver todos los proyectos",
-      "title": "Proyectos destacados"
+      "card": "Servicio",
+      "more": "Ver todos los servicios",
+      "title": "Servicios destacados"
     }
   },
   "layout": {
-    "change-language": "Cambiar idioma",
-    "now-playing": {
-      "loading": "Cargando...",
-      "not-listening": "Sin reproducción - Spotify"
-    },
     "sidebar": {
       "description": "Muestra la barra lateral móvil.",
       "title": "Barra lateral"

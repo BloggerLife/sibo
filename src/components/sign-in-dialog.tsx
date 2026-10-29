@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog'
-import { Link } from '@/components/ui/link'
 import { toast } from '@/components/ui/toast'
 import { useSignInDialog } from '@/hooks/use-sign-in-dialog'
 import { usePathname } from '@/i18n/navigation'
@@ -42,7 +41,7 @@ function GoogleIcon() {
 }
 
 export function SignInDialog() {
-  const { open, setOpen, closeDialog: closeSignInDialog } = useSignInDialog()
+  const { open, setOpen } = useSignInDialog()
   const [isPending, setIsPending] = useState(false)
   const [lastUsedProvider, setLastUsedProvider] = useState<Provider | null>(null)
   const t = useTranslations()
@@ -76,12 +75,6 @@ export function SignInDialog() {
     })
   }
 
-  function closeDialog() {
-    if (!isPending) {
-      closeSignInDialog()
-    }
-  }
-
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className='sm:max-w-120'>
@@ -112,20 +105,6 @@ export function SignInDialog() {
             {t('dialog.sign-in.continue-with', { provider: 'Google' })}
             {lastUsedProvider === 'google' && <LastUsed />}
           </Button>
-        </div>
-        <div className='text-center text-xs text-muted-foreground'>
-          {t.rich('dialog.sign-in.notice', {
-            terms: (chunks) => (
-              <Link href='/terms' className='text-foreground underline' onClick={closeDialog}>
-                {chunks}
-              </Link>
-            ),
-            privacy: (chunks) => (
-              <Link href='/privacy' className='text-foreground underline' onClick={closeDialog}>
-                {chunks}
-              </Link>
-            ),
-          })}
         </div>
       </DialogContent>
     </Dialog>

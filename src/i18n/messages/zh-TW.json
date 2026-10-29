@@ -21,29 +21,6 @@
     "update-avatar": "更新頭像"
   },
   "admin": {
-    "dashboard": {
-      "description": "網站概覽",
-      "recent-activity": {
-        "commented-on": "{name} 在 <link>{post}</link> 發表了評論",
-        "empty": "沒有最近的活動",
-        "guestbook-message": "{name} 留下了一則留言",
-        "title": "最近活動"
-      },
-      "stats": {
-        "comments": "評論",
-        "likes": "按讚",
-        "messages": "訊息",
-        "users": "使用者",
-        "views": "瀏覽次數"
-      },
-      "trends": {
-        "comments": "評論",
-        "last-n-days": "最近 {days} 天",
-        "messages": "留言板",
-        "no-data": "沒有可用的資料",
-        "title": "趨勢"
-      }
-    },
     "page-header": {
       "comments": {
         "description": "管理評論"
@@ -130,21 +107,17 @@
       "close": "關閉",
       "comment": "評論",
       "comments": "評論",
-      "dashboard": "儀表板",
       "facebook": "Facebook",
       "general": "一般",
       "github": "GitHub",
-      "guestbook": "留言板",
+      "guestbook": "心得分享",
       "home": "首頁",
       "instagram": "Instagram",
       "links": "連結",
-      "privacy": "隱私權政策",
-      "projects": "專案",
+      "projects": "服務",
       "settings": "設定",
-      "terms": "服務條款",
       "unsubscribe": "取消訂閱",
       "users": "使用者",
-      "uses": "裝備",
       "youtube": "YouTube"
     },
     "like": "讚",
@@ -186,23 +159,11 @@
       "rows-selected": "已選取 {selected} / {total} 行"
     }
   },
-  "dashboard": {
-    "stat": {
-      "blog-total-likes": "部落格總按讚數",
-      "blog-total-views": "部落格總瀏覽量",
-      "coding-hours": "編程時間",
-      "github-followers": "GitHub 關注者",
-      "github-stars": "GitHub 星數",
-      "youtube-subscribers": "YouTube 訂閱者",
-      "youtube-views": "YouTube 瀏覽量"
-    }
-  },
   "dialog": {
     "sign-in": {
       "continue-with": "使用 {provider} 繼續",
       "description": "以繼續使用 nelsonlai.dev",
-      "last-used": "上次使用",
-      "notice": "繼續即表示您同意我們的 <terms>服務條款</terms> 和 <privacy>隱私權政策</privacy>"
+      "last-used": "上次使用"
     }
   },
   "error": {
@@ -211,7 +172,6 @@
     "comment-cannot-be-empty": "評論不能為空",
     "copy-to-clipboard-error": "無法複製到剪貼簿，請再試一次。",
     "failed-to-fetch-comments-data": "無法獲取評論資料。請重新整理頁面。",
-    "failed-to-fetch-dashboard-data": "無法獲取儀表板資料。請重新整理頁面。",
     "failed-to-fetch-users-data": "無法獲取使用者資料。請重新整理頁面。",
     "failed-to-load-comments": "無法載入評論。請重新整理頁面。",
     "failed-to-load-messages": "無法載入留言。請重新整理頁面。",
@@ -223,7 +183,6 @@
     "name-too-long": "名稱過長",
     "need-logged-in-to-vote": "您必須登入才能投票評論",
     "not-found": "找不到頁面。",
-    "now-playing-error": "無法獲取 Spotify 資料",
     "reply-cannot-be-empty": "回覆不能為空",
     "sign-in-error": "登入失敗。請再試一次。",
     "sign-out-failed": "登出失敗，請再試一次。",
@@ -232,16 +191,16 @@
     "try-again": "再試一次"
   },
   "guestbook": {
-    "no-messages": "沒有留言，快來成為第一位留言者！",
+    "no-messages": "還沒有心得分享，歡迎分享你的感受！",
     "pinned": {
-      "description": "感謝您造訪我的網站。如果您有時間，我很樂意聽取您對我作品的看法。請使用您的帳戶登入以留下評論。謝謝！",
+      "description": "感謝你造訪我的網站。如果你有時間，歡迎分享你對我工作的看法。請登入帳戶後分享你的心得，謝謝！",
       "greeting": "嗨！ 👋"
     },
-    "placeholder": "留言",
+    "placeholder": "分享你的心得",
     "signin": {
-      "description": "以留下評論"
+      "description": "以分享心得"
     },
-    "submit": "送出"
+    "submit": "送出心得"
   },
   "homepage": {
     "about-me": {
@@ -277,17 +236,12 @@
       "title": "最新文章"
     },
     "selected-projects": {
-      "card": "專案",
-      "more": "查看所有專案",
-      "title": "精選專案"
+      "card": "服務",
+      "more": "查看所有服務",
+      "title": "精選服務"
     }
   },
   "layout": {
-    "change-language": "更改語言",
-    "now-playing": {
-      "loading": "載入中...",
-      "not-listening": "未在收聽 - Spotify"
-    },
     "sidebar": {
       "description": "顯示行動版側邊欄。",
       "title": "側邊欄"

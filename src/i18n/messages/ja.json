@@ -21,29 +21,6 @@
     "update-avatar": "アバターを更新"
   },
   "admin": {
-    "dashboard": {
-      "description": "サイトの概要",
-      "recent-activity": {
-        "commented-on": "{name} が <link>{post}</link> にコメントしました",
-        "empty": "最近のアクティビティはありません",
-        "guestbook-message": "{name} がゲストブックにメッセージを残しました",
-        "title": "最近のアクティビティ"
-      },
-      "stats": {
-        "comments": "コメント",
-        "likes": "いいね",
-        "messages": "メッセージ",
-        "users": "ユーザー",
-        "views": "閲覧数"
-      },
-      "trends": {
-        "comments": "コメント",
-        "last-n-days": "過去 {days} 日間",
-        "messages": "ゲストブック",
-        "no-data": "データがありません",
-        "title": "トレンド"
-      }
-    },
     "page-header": {
       "comments": {
         "description": "コメントを管理"
@@ -130,21 +107,17 @@
       "close": "閉じる",
       "comment": "コメント",
       "comments": "コメント",
-      "dashboard": "ダッシュボード",
       "facebook": "Facebook",
       "general": "一般",
       "github": "GitHub",
-      "guestbook": "ゲストブック",
+      "guestbook": "お客様の声",
       "home": "ホーム",
       "instagram": "Instagram",
       "links": "リンク",
-      "privacy": "プライバシーポリシー",
-      "projects": "プロジェクト",
+      "projects": "サービス",
       "settings": "設定",
-      "terms": "利用規約",
       "unsubscribe": "配信停止",
       "users": "ユーザー",
-      "uses": "使用機材",
       "youtube": "YouTube"
     },
     "like": "いいね",
@@ -186,23 +159,11 @@
       "rows-selected": "{total} 行中 {selected} 行を選択中"
     }
   },
-  "dashboard": {
-    "stat": {
-      "blog-total-likes": "ブログ総いいね数",
-      "blog-total-views": "ブログ総閲覧数",
-      "coding-hours": "コーディング時間",
-      "github-followers": "GitHub フォロワー",
-      "github-stars": "GitHub スター",
-      "youtube-subscribers": "YouTube 登録者数",
-      "youtube-views": "YouTube 再生回数"
-    }
-  },
   "dialog": {
     "sign-in": {
       "continue-with": "{provider} で続ける",
       "description": "nelsonlai.dev に続けるには",
-      "last-used": "最後に使用",
-      "notice": "続けることで、<terms>利用規約</terms>と<privacy>プライバシーポリシー</privacy>に同意したことになります"
+      "last-used": "最後に使用"
     }
   },
   "error": {
@@ -211,7 +172,6 @@
     "comment-cannot-be-empty": "コメントを入力してください",
     "copy-to-clipboard-error": "クリップボードにコピーできません。もう一度お試しください。",
     "failed-to-fetch-comments-data": "コメントデータの取得に失敗しました。ページを更新してください。",
-    "failed-to-fetch-dashboard-data": "ダッシュボードデータの取得に失敗しました。ページを更新してください。",
     "failed-to-fetch-users-data": "ユーザーデータの取得に失敗しました。ページを更新してください。",
     "failed-to-load-comments": "コメントの読み込みに失敗しました。ページを更新してください。",
     "failed-to-load-messages": "メッセージの読み込みに失敗しました。ページを更新してください。",
@@ -223,7 +183,6 @@
     "name-too-long": "名前が長すぎます",
     "need-logged-in-to-vote": "コメントに投票するにはログインが必要です",
     "not-found": "ページが見つかりません。",
-    "now-playing-error": "Spotify データの取得に失敗しました",
     "reply-cannot-be-empty": "返信を入力してください",
     "sign-in-error": "サインインに失敗しました。もう一度お試しください。",
     "sign-out-failed": "サインアウトに失敗しました。もう一度お試しください。",
@@ -232,16 +191,16 @@
     "try-again": "もう一度試す"
   },
   "guestbook": {
-    "no-messages": "メッセージがありません。最初のメッセージを残しましょう！",
+    "no-messages": "まだお客様の声はありません。最初の感想をぜひお寄せください！",
     "pinned": {
-      "description": "私のウェブサイトにお越しいただきありがとうございます。お時間があれば、私の作品についてのご意見をお聞かせください。コメントを残すにはアカウントでログインしてください。よろしくお願いします！",
+      "description": "ウェブサイトをご覧いただきありがとうございます。よろしければ、私の活動についてのご感想をお聞かせください。感想を投稿するにはアカウントでログインしてください。",
       "greeting": "こんにちは！ 👋"
     },
-    "placeholder": "メッセージを残す",
+    "placeholder": "感想を共有する",
     "signin": {
-      "description": "メッセージを残す"
+      "description": "感想を投稿する"
     },
-    "submit": "送信"
+    "submit": "感想を送信"
   },
   "homepage": {
     "about-me": {
@@ -277,17 +236,12 @@
       "title": "最新の記事"
     },
     "selected-projects": {
-      "card": "プロジェクト",
-      "more": "すべてのプロジェクトを見る",
-      "title": "厳選プロジェクト"
+      "card": "サービス",
+      "more": "すべてのサービスを見る",
+      "title": "おすすめサービス"
     }
   },
   "layout": {
-    "change-language": "言語を変更",
-    "now-playing": {
-      "loading": "読み込み中...",
-      "not-listening": "再生停止中 - Spotify"
-    },
     "sidebar": {
       "description": "モバイルサイドバーを表示します。",
       "title": "サイドバー"
