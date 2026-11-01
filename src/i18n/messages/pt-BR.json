@@ -204,31 +204,28 @@
   },
   "homepage": {
     "about-me": {
-      "coding-hours": "Horas de codificação",
       "connect": "Conectar",
-      "fav-framework": "Framework fav.",
       "location": "Localização",
-      "location-value": "🇭🇰 Hong Kong",
+      "location-value": "🇿🇼 Zimbabwe",
       "more": "Saiba mais sobre mim",
-      "stacks": "Tecnologias",
       "title": "Sobre Mim"
     },
     "get-in-touch": {
       "description": "Sinta-se à vontade para entrar em contato comigo!",
-      "image-alt": "Logo de Nelson Lai",
+      "image-alt": "Logo de Sibongile",
       "title": "Alguma pergunta sobre o Next.js?"
     },
     "hero": {
       "amazing": "Incrível",
       "attractive": "Atraente",
       "fantastic": "Fantástico",
-      "location-timezone": "Hong Kong • UTC/GMT +8",
+      "location-timezone": "Zimbabwe • UTC/GMT +2",
       "stunning": "Impressionante",
-      "line-1": "Sou Nelson, um Engenheiro Full Stack",
+      "line-1": "Sou Sibongile, um Engenheiro Full Stack",
       "line-2-left": "construindo",
       "line-2-right": "sites usando",
       "line-3": "React",
-      "image-alt": "Logo de Nelson Lai"
+      "image-alt": "Logo de Sibongile"
     },
     "latest-articles": {
       "card": "Artigo",
@@ -253,7 +250,7 @@
     "link-to-section": "Link para a seção"
   },
   "metadata": {
-    "site-description": "Nelson Lai é um engenheiro full stack sediado em Hong Kong. Ele constrói sites de alto desempenho e elegantes usando React, Node.js e tecnologias modernas."
+    "site-description": "Sibongile é uma pessoa desenvolvedora full stack sediada no Zimbabwe. Cria sites de alto desempenho e elegantes usando React, Node.js e tecnologias modernas."
   },
   "projects": {
     "visit-website": "Visitar Site"

@@ -153,7 +153,6 @@ export type JsonLdSoftwareSourceCodeOptions = {
   name: string
   description: string
   url: string
-  codeRepository: string
   dateCreated: string
   dateModified: string
   slug: string
@@ -172,7 +171,6 @@ export function createJsonLdSoftwareSourceCode(
     name: options.name,
     description: options.description,
     url: fullUrl,
-    codeRepository: options.codeRepository,
     license: 'https://opensource.org/licenses/MIT',
     programmingLanguage: 'TypeScript',
     dateCreated: options.dateCreated,

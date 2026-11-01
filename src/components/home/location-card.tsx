@@ -9,7 +9,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { Badge } from '../ui/badge'
 
-const MARKERS = [{ id: 'hk', location: [22.3193, 114.1694] as [number, number], size: 0.03 }]
+const MARKERS = [{ id: 'zw', location: [-17.8267, 31.0361] as [number, number], size: 0.03 }]
 
 function getThemeOptions(isDark: boolean) {
   return {

@@ -14,9 +14,14 @@ import { Video } from './video'
 
 type MdxProps = {
   code: string
+  disableExternalLinks?: boolean
 }
 
-const components = {
+function isExternalHref(href: string) {
+  return /^[a-z][a-z\d+.-]*:|^\/\//i.test(href)
+}
+
+const components = (disableExternalLinks: boolean) => ({
   h2: (props: React.ComponentProps<'h2'>) => <Heading as='h2' {...props} />,
   h3: (props: React.ComponentProps<'h3'>) => <Heading as='h3' {...props} />,
   h4: (props: React.ComponentProps<'h4'>) => <Heading as='h4' {...props} />,
@@ -27,6 +32,10 @@ const components = {
 
     if (!href) {
       throw new Error('Href is required for Link component')
+    }
+
+    if (disableExternalLinks && isExternalHref(href)) {
+      return <span>{children}</span>
     }
 
     return (
@@ -52,18 +61,24 @@ const components = {
   // Custom components
   Table,
   Video,
-  LinkCard,
+  LinkCard: (props: React.ComponentProps<typeof LinkCard>) => {
+    if (disableExternalLinks && isExternalHref(props.href)) {
+      return <span>{props.title}</span>
+    }
+
+    return <LinkCard {...props} />
+  },
   Logo,
   TreeView,
-}
+})
 
 export function Mdx(props: MdxProps) {
-  const { code } = props
+  const { code, disableExternalLinks = false } = props
   const MDXContent = useMDXComponent(code)
 
   return (
     <div className='prose w-full'>
-      <MDXContent components={components} />
+      <MDXContent components={components(disableExternalLinks)} />
     </div>
   )
 }

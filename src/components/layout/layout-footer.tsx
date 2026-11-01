@@ -27,7 +27,7 @@ export function LayoutFooter() {
       </div>
       <div className='mt-20 text-sm text-muted-foreground'>
         {/* oxlint-disable-next-line @eslint-react/purity */}
-        &copy; {new Date().getFullYear()} Nelson Lai
+        &copy; {new Date().getFullYear()} Sibongile
       </div>
     </footer>
   )

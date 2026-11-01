@@ -1,7 +1,7 @@
-import { SiFacebook, SiInstagram, SiX, SiYoutube } from '@icons-pack/react-simple-icons'
+import { SiFacebook, SiInstagram, SiTiktok, SiYoutube } from '@icons-pack/react-simple-icons'
 import { FlameIcon, MessageCircleIcon, MessagesSquareIcon, PencilIcon, UserCircleIcon, UsersIcon } from 'lucide-react'
 
-import { SITE_FACEBOOK_URL, SITE_INSTAGRAM_URL, SITE_TWITTER_URL, SITE_YOUTUBE_URL } from './site'
+import { SITE_FACEBOOK_URL, SITE_INSTAGRAM_URL, SITE_TIKTOK_URL, SITE_YOUTUBE_URL } from './site'
 
 export const HEADER_LINKS = [
   {
@@ -109,9 +109,9 @@ export const SOCIAL_LINKS = [
     icon: <SiInstagram />,
   },
   {
-    href: SITE_TWITTER_URL,
-    title: 'X',
-    icon: <SiX />,
+    href: SITE_TIKTOK_URL,
+    title: 'TikTok',
+    icon: <SiTiktok />,
   },
   {
     href: SITE_YOUTUBE_URL,

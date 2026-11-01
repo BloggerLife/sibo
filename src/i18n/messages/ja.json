@@ -204,31 +204,28 @@
   },
   "homepage": {
     "about-me": {
-      "coding-hours": "コーディング時間",
       "connect": "つながる",
-      "fav-framework": "お気に入りのフレームワーク",
       "location": "所在地",
-      "location-value": "🇭🇰 香港",
+      "location-value": "🇿🇼 ジンバブエ",
       "more": "私についてもっと知る",
-      "stacks": "技術スタック",
       "title": "私について"
     },
     "get-in-touch": {
       "description": "気軽にご連絡ください！",
-      "image-alt": "Nelson Lai のロゴ",
+      "image-alt": "Sibongile のロゴ",
       "title": "Next.js についてご質問があれば？"
     },
     "hero": {
       "amazing": "素晴らしい",
       "attractive": "魅力的な",
       "fantastic": "最高な",
-      "location-timezone": "香港 • UTC/GMT +8",
+      "location-timezone": "ジンバブエ • UTC/GMT +2",
       "stunning": "圧倒的な",
-      "line-1": "Nelson です。フルスタックエンジニアとして",
+      "line-1": "Sibongile です。フルスタックエンジニアとして",
       "line-2-left": "制作している",
       "line-2-right": "ウェブサイトを",
       "line-3": "React で開発しています",
-      "image-alt": "Nelson Lai のロゴ"
+      "image-alt": "Sibongile のロゴ"
     },
     "latest-articles": {
       "card": "記事",
@@ -253,7 +250,7 @@
     "link-to-section": "セクションへのリンク"
   },
   "metadata": {
-    "site-description": "Nelson Lai は香港在住のフルスタックエンジニアです。React、Node.js、最新技術を使ってパフォーマントで洗練されたウェブサイトを構築しています。"
+    "site-description": "Sibongile はジンバブエ在住のフルスタックエンジニアです。React、Node.js、最新技術を使ってパフォーマントで洗練されたウェブサイトを構築しています。"
   },
   "projects": {
     "visit-website": "ウェブサイトを訪問"

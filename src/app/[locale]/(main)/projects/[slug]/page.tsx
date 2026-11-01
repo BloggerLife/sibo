@@ -52,13 +52,12 @@ async function Page(props: PageProps<'/[locale]/projects/[slug]'>) {
     notFound()
   }
 
-  const { title, code, description, github, date, lastModified } = project
+  const { title, code, description, date, lastModified } = project
 
   const jsonLd = createJsonLdSoftwareSourceCode({
     name: title,
     description,
     url,
-    codeRepository: github,
     dateCreated: date,
     dateModified: lastModified,
     slug,
@@ -78,7 +77,7 @@ async function Page(props: PageProps<'/[locale]/projects/[slug]'>) {
           className='my-12 rounded-lg'
           lazy={false}
         />
-        <Mdx code={code} />
+        <Mdx code={code} disableExternalLinks />
       </div>
     </>
   )

@@ -8,11 +8,8 @@ import { useRef } from 'react'
 import { buttonVariants } from '@/components/ui/button'
 import { Link } from '@/components/ui/link'
 
-import { CodingHours } from './coding-hours'
 import { Connect } from './connect'
-import { FavoriteFramework } from './favorite-framework'
 import { LocationCard } from './location-card'
-import { StacksCard } from './stacks-card'
 
 const variants = {
   initial: { y: 40, opacity: 0 },
@@ -47,17 +44,8 @@ export function AboutMe() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <div className='grid gap-4'>
-          <LocationCard />
-          <StacksCard />
-        </div>
-        <div className='grid gap-4'>
-          <Connect />
-          <div className='grid gap-4 [@media(min-width:450px)]:grid-cols-2'>
-            <CodingHours />
-            <FavoriteFramework />
-          </div>
-        </div>
+        <LocationCard />
+        <Connect />
       </motion.div>
       <div className='my-8 flex items-center justify-center'>
         <Link href='/about' className={cn(buttonVariants({ variant: 'outline' }))}>

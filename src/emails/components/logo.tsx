@@ -5,7 +5,7 @@ function Logo() {
     <Section className='mb-6'>
       <Img
         src='https://nelsonlai.dev/images/avatar.png'
-        alt="Nelson Lai's logo"
+        alt="Sibongile's logo"
         width='48'
         height='48'
         className='rounded-full'

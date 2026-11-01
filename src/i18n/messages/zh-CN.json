@@ -204,31 +204,28 @@
   },
   "homepage": {
     "about-me": {
-      "coding-hours": "编程时间",
       "connect": "联系",
-      "fav-framework": "最爱框架",
       "location": "位置",
-      "location-value": "🇭🇰 香港",
+      "location-value": "🇿🇼 津巴布韦",
       "more": "进一步了解我",
-      "stacks": "技术栈",
       "title": "关于我"
     },
     "get-in-touch": {
       "description": "随时联络我！",
-      "image-alt": "Nelson Lai 的标志",
+      "image-alt": "Sibongile 的标志",
       "title": "有关 Next.js 的任何问题？"
     },
     "hero": {
       "amazing": "精彩绝伦",
       "attractive": "引人入胜",
       "fantastic": "极致出色",
-      "location-timezone": "香港 • UTC/GMT +8",
+      "location-timezone": "津巴布韦 • UTC/GMT +2",
       "stunning": "惊艳非凡",
-      "line-1": "我是 Nelson，一位全栈工程师",
+      "line-1": "我是 Sibongile，一位全栈工程师",
       "line-2-left": "制作",
       "line-2-right": "的网站",
       "line-3": "并使用 React 开发",
-      "image-alt": "Nelson Lai 的标志"
+      "image-alt": "Sibongile 的标志"
     },
     "latest-articles": {
       "card": "文章",
@@ -253,7 +250,7 @@
     "link-to-section": "连结至章节"
   },
   "metadata": {
-    "site-description": "Nelson Lai 是一位居住于香港的全栈工程师。他使用 React、Node.js 和现代技术构建高效且优雅的网站。"
+    "site-description": "Sibongile 是一位居住于津巴布韦的全栈工程师，使用 React、Node.js 和现代技术构建高效优雅的网站。"
   },
   "projects": {
     "visit-website": "前往网站"

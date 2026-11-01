@@ -204,19 +204,16 @@
   },
   "homepage": {
     "about-me": {
-      "coding-hours": "Coding hours",
       "connect": "Connect",
-      "fav-framework": "Fav. framework",
       "location": "Location",
-      "location-value": "🇭🇰 Hong Kong",
+      "location-value": "🇿🇼 Zimbabwe",
       "more": "Know more about me",
-      "stacks": "Stacks",
       "title": "About Me"
     },
     "get-in-touch": {
       "description": "Feel free to reach out to me!",
       "image-alt": "Sibongile's Logo",
-      "title": "Any questions about Next.js?"
+      "title": "Any questions about CruiseShips?"
     },
     "hero": {
       "information": "information",
@@ -252,7 +249,7 @@
     "link-to-section": "Link to section"
   },
   "metadata": {
-    "site-description": "Nelson Lai is a full stack engineer based in Hong Kong. He builds performant and elegant websites using React, Node.js, and modern technologies."
+    "site-description": "Sibongile is a full stack engineer based in Zimbabwe. They build performant and elegant websites using React, Node.js, and modern technologies."
   },
   "projects": {
     "visit-website": "Visit Website"

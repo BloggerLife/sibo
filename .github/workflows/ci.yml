@@ -18,7 +18,7 @@ env:
   IP_ADDRESS_SALT: 'ci-ip-address-salt-for-testing-purposes'
   BETTER_AUTH_SECRET: 'ci-better-auth-secret-for-testing-purposes'
   JWT_SECRET: 'ci-jwt-secret-for-testing-purposes'
-  RESEND_FROM_EMAIL: 'Nelson Lai <noreply@example.com>'
+  RESEND_FROM_EMAIL: 'Sibongile <noreply@example.com>'
   GITHUB_CLIENT_ID: 'ci-github-client-id'
   GITHUB_CLIENT_SECRET: 'ci-github-client-secret'
 
