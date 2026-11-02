@@ -49,8 +49,6 @@ export const FOOTER_GROUPS = [
       { href: '/guestbook', labelKey: 'common.labels.guestbook' },
       // i18n-check t('common.labels.projects')
       { href: '/projects', labelKey: 'common.labels.projects' },
-      // i18n-check t('common.labels.links')
-      { href: 'https://nelsonlai.link', labelKey: 'common.labels.links' },
     ],
   },
   {
@@ -60,6 +58,8 @@ export const FOOTER_GROUPS = [
       { href: SITE_FACEBOOK_URL, labelKey: 'common.labels.facebook' },
       // i18n-check t('common.labels.instagram')
       { href: SITE_INSTAGRAM_URL, labelKey: 'common.labels.instagram' },
+      // i18n-check t('common.labels.tiktok')
+      { href: SITE_TIKTOK_URL, labelKey: 'common.labels.tiktok' },
       // i18n-check t('common.labels.youtube')
       { href: SITE_YOUTUBE_URL, labelKey: 'common.labels.youtube' },
     ],

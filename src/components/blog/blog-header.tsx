@@ -13,6 +13,7 @@ import { MY_NAME } from '@/constants/site'
 import { useCountComment } from '@/hooks/queries/comment.query'
 import { useCountView, useIncrementView } from '@/hooks/queries/view.query'
 import { useFormattedDate } from '@/hooks/use-formatted-date'
+import { getBlogImageFolder } from '@/utils/get-blog-image-folder'
 
 type BlogHeaderProps = {
   post: Post
@@ -79,7 +80,7 @@ export function BlogHeader(props: BlogHeaderProps) {
       </div>
       <ImageZoom>
         <BlurImage
-          src={`/images/blog/${post.slug}/cover.png`}
+          src={`/images/blog/${getBlogImageFolder(post.slug)}/cover.png`}
           className='rounded-lg'
           width={1200}
           height={630}

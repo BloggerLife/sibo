@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl'
 import { useCountLike } from '@/hooks/queries/like.query'
 import { useCountView } from '@/hooks/queries/view.query'
 import { useFormattedDate } from '@/hooks/use-formatted-date'
+import { getBlogImageFolder } from '@/utils/get-blog-image-folder'
 
 import { ContentCard } from './content-card'
 
@@ -29,7 +30,7 @@ export function PostCard(props: PostCardProps) {
       key={post.slug}
       href={`/blog/${post.slug}`}
       title={t('homepage.latest-articles.card')}
-      image={`/images/blog/${post.slug}/cover.png`}
+      image={`/images/blog/${getBlogImageFolder(post.slug)}/cover.png`}
       imageAlt={post.title}
       icon={<PencilIcon className='size-4.5' />}
       featured={featured}
