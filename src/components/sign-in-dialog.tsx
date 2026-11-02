@@ -1,6 +1,5 @@
 'use client'
 
-import { SiGithub } from '@icons-pack/react-simple-icons'
 import { useLocale, useTranslations } from 'next-intl'
 import { useEffect, useState } from 'react'
 
@@ -14,7 +13,7 @@ import { authClient } from '@/lib/auth-client'
 
 import { Spinner } from './ui/spinner'
 
-type Provider = 'github' | 'google'
+type Provider = 'google'
 
 function GoogleIcon() {
   return (
@@ -49,9 +48,9 @@ export function SignInDialog() {
   const locale = useLocale()
 
   useEffect(() => {
-    const provider = localStorage.getItem('last-used-provider') as Provider | null
+    const storedProvider = localStorage.getItem('last-used-provider')
     // oxlint-disable-next-line @eslint-react/set-state-in-effect
-    setLastUsedProvider(provider)
+    setLastUsedProvider(storedProvider === 'google' ? storedProvider : null)
   }, [])
 
   async function handleSignIn(provider: Provider) {
@@ -83,17 +82,6 @@ export function SignInDialog() {
           <DialogDescription className='text-left'>{t('dialog.sign-in.description')}</DialogDescription>
         </DialogHeader>
         <div className='my-6 flex flex-col gap-4'>
-          <Button
-            className='relative'
-            size='lg'
-            onClick={async () => handleSignIn('github')}
-            disabled={isPending}
-            data-testid='github-sign-in-button'
-          >
-            {isPending ? <Spinner /> : <SiGithub />}
-            {t('dialog.sign-in.continue-with', { provider: 'GitHub' })}
-            {lastUsedProvider === 'github' && <LastUsed />}
-          </Button>
           <Button
             className='relative border-border'
             size='lg'

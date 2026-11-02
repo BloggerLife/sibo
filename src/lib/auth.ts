@@ -19,13 +19,6 @@ function getSocialProviders(): SocialProviders {
     }
   }
 
-  if (ENV.GITHUB_CLIENT_ID && ENV.GITHUB_CLIENT_SECRET) {
-    providers.github = {
-      clientId: ENV.GITHUB_CLIENT_ID,
-      clientSecret: ENV.GITHUB_CLIENT_SECRET,
-    }
-  }
-
   return providers
 }
 

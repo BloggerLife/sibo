@@ -1,6 +1,6 @@
 'use client'
 
-import { CodeIcon, CommandIcon, LinkIcon, LogInIcon, LogOutIcon, ShieldIcon, UserCircleIcon } from 'lucide-react'
+import { CommandIcon, LinkIcon, LogInIcon, LogOutIcon, ShieldIcon, UserCircleIcon } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { Fragment, useEffect, useState } from 'react'
 
@@ -15,7 +15,6 @@ import {
   CommandList,
   CommandSeparator,
 } from '@/components/ui/command'
-import { SOCIAL_LINKS } from '@/constants/navigation'
 import { useCopyToClipboard } from '@/hooks/use-copy-to-clipboard'
 import { useSignInDialog } from '@/hooks/use-sign-in-dialog'
 import { useSignOut } from '@/hooks/use-sign-out'
@@ -52,11 +51,6 @@ export function CommandMenu() {
 
   function toggleMenu() {
     setIsOpen((value) => !value)
-  }
-
-  function openExternalLink(url: string) {
-    closeMenu()
-    window.open(url, '_blank', 'noopener')
   }
 
   async function copyCurrentUrl() {
@@ -136,27 +130,11 @@ export function CommandMenu() {
       icon: <LinkIcon />,
       handleSelect: copyCurrentUrl,
     },
-    {
-      title: t('command-menu.actions.source-code'),
-      icon: <CodeIcon />,
-      handleSelect: () => {
-        openExternalLink('https://github.com/nelsonlaidev/nelsonlai.dev')
-      },
-    },
   ]
-
-  const socialActions: CommandAction[] = SOCIAL_LINKS.map((link) => ({
-    title: link.title,
-    icon: link.icon,
-    handleSelect: () => {
-      openExternalLink(link.href)
-    },
-  }))
 
   const groups: CommandSection[] = [
     { name: t('common.labels.account'), actions: accountActions },
     { name: t('common.labels.general'), actions: generalActions },
-    { name: t('command-menu.groups.social'), actions: socialActions },
   ]
 
   return (

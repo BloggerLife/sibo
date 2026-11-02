@@ -35,10 +35,10 @@ setup('setup auth', async () => {
       .values({
         id: TEST_UNIQUE_ID,
         accountId: TEST_USER.accountId,
-        providerId: 'github',
+        providerId: 'google',
         userId: TEST_UNIQUE_ID,
-        accessToken: 'gho_000',
-        scope: 'read:user,user:email',
+        accessToken: 'google-test-access-token',
+        scope: 'openid email profile',
         createdAt: now,
         updatedAt: now,
       })
