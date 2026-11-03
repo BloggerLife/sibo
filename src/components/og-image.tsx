@@ -20,10 +20,11 @@ function getDescriptionFontSize(text: string) {
 type OGImageProps = {
   title: string
   description: string
+  logoSrc: string
 }
 
 export function OGImage(props: OGImageProps) {
-  const { title, description } = props
+  const { title, description, logoSrc } = props
 
   return (
     <div
@@ -74,7 +75,7 @@ export function OGImage(props: OGImageProps) {
             gap: '40px',
           }}
         >
-          <Logo width={40} height={40} />
+          <Logo src={logoSrc} width={40} height={40} />
           <p
             style={{
               fontSize: '56px',

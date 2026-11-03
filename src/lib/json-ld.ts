@@ -15,12 +15,20 @@ import {
   SITE_FACEBOOK_URL,
   SITE_GITHUB_URL,
   SITE_INSTAGRAM_URL,
+  SITE_TIKTOK_URL,
   SITE_TWITTER_URL,
   SITE_YOUTUBE_URL,
 } from '@/constants/site'
 import { getBaseUrl } from '@/utils/get-base-url'
 
-const ALL_SAME_AS = [SITE_FACEBOOK_URL, SITE_INSTAGRAM_URL, SITE_TWITTER_URL, SITE_GITHUB_URL, SITE_YOUTUBE_URL]
+const ALL_SAME_AS = [
+  SITE_FACEBOOK_URL,
+  SITE_INSTAGRAM_URL,
+  SITE_TIKTOK_URL,
+  SITE_YOUTUBE_URL,
+  SITE_TWITTER_URL,
+  SITE_GITHUB_URL,
+]
 
 type JsonLdPersonOptions = {
   description?: string

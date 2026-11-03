@@ -58,7 +58,7 @@ export function LayoutHeader() {
     >
       <SkipNav />
       <Link href='/' aria-label={t('common.labels.home')}>
-        <Logo width={20} aria-hidden='true' />
+        <Logo width={40} aria-hidden='true' />
       </Link>
       <div className='flex items-center gap-2'>
         <Navbar />
